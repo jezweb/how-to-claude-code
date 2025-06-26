@@ -536,11 +536,17 @@ tail -f ~/.config/Code*/logs/*/mcp*.log
 ### Installation One-Liners
 
 ```bash
+# Context7 MCP (FREE - no API key needed!)
+curl -sSL https://raw.githubusercontent.com/jezweb/how-to-claude-code/main/scripts/quick-install/install-context7.sh | bash
+
 # Jina MCP
 curl -sSL https://raw.githubusercontent.com/jezweb/how-to-claude-code/main/scripts/quick-install/install-jina.sh | bash
 
 # GitHub MCP
 curl -sSL https://raw.githubusercontent.com/jezweb/how-to-claude-code/main/scripts/quick-install/install-github.sh | bash
+
+# Playwright MCP
+curl -sSL https://raw.githubusercontent.com/jezweb/how-to-claude-code/main/scripts/quick-install/install-playwright.sh | bash
 
 # Interactive installer
 curl -sSL https://raw.githubusercontent.com/jezweb/how-to-claude-code/main/scripts/install-mcp-server.sh | bash

@@ -170,6 +170,7 @@ Playwright/Puppeteer MCP servers enable:
 
 ### Content & Search
 - AI-powered search with Jina
+- Real-time documentation with Context7
 - Content extraction from websites
 - Document processing
 - Knowledge aggregation

@@ -60,6 +60,13 @@ MCP_REGISTRY = {
         "env_vars": ["JINA_API_KEY"],
         "setup_help": "Get an API key at: https://jina.ai"
     },
+    "context7": {
+        "package": "@upstash/context7-mcp",
+        "description": "Real-time documentation retrieval for programming libraries",
+        "args_template": ["-y", "{package}"],
+        "env_vars": [],
+        "setup_help": "No API key required! Just add 'use context7' to your prompts"
+    },
     "playwright": {
         "package": "@playwright/mcp",
         "description": "Browser automation and testing",
