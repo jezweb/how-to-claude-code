@@ -2,12 +2,16 @@
 
 Cloudflare offers multiple MCP servers that enable Claude Code to interact with various Cloudflare services. This guide covers setup and usage for each server.
 
+## ⚠️ Known Issues
+
+**The cloudflare-workers MCP server is currently experiencing issues and should be avoided.** We recommend using only the Observability, AI Gateway, and DNS Analytics servers until this is resolved.
+
 ## Available Cloudflare MCP Servers
 
-1. **Workers & Bindings** - Manage Workers, KV, R2, D1, and more
-2. **Observability** - Monitor Workers performance and logs
-3. **AI Gateway** - Manage AI Gateway configurations
-4. **DNS Analytics** - Analyze DNS traffic and settings
+1. **Workers & Bindings** - ⚠️ Currently has issues - not recommended
+2. **Observability** - ✅ Monitor Workers performance and logs
+3. **AI Gateway** - ✅ Manage AI Gateway configurations
+4. **DNS Analytics** - ✅ Analyze DNS traffic and settings
 
 ## Installation
 

@@ -50,12 +50,15 @@ if [ ${#missing_vars[@]} -gt 0 ]; then
 fi
 
 # Cloudflare servers to install
+# NOTE: cloudflare-workers is currently experiencing issues and is disabled
 declare -A CF_SERVERS=(
-    ["cloudflare-workers"]="@cloudflare/mcp-server-workers|Workers management"
+    #["cloudflare-workers"]="@cloudflare/mcp-server-workers|Workers management"  # DISABLED - Known issues
     ["cloudflare-observability"]="@cloudflare/mcp-server-observability|Workers observability"
     ["cloudflare-ai-gateway"]="@cloudflare/mcp-server-ai-gateway|AI Gateway management"
     ["cloudflare-dns-analytics"]="@cloudflare/mcp-server-dns-analytics|DNS analytics"
 )
+
+echo -e "\n${YELLOW}⚠ Note: cloudflare-workers MCP server is currently disabled due to known issues${NC}"
 
 # Install using Python script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -123,7 +126,8 @@ echo -e "\n${GREEN}Next steps:${NC}"
 echo "1. Set CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID if not done"
 echo "2. Restart Claude for changes to take effect"
 echo "3. Claude can now manage:"
-echo "   - Cloudflare Workers"
 echo "   - AI Gateway"
 echo "   - DNS Analytics"
 echo "   - Worker Observability"
+echo ""
+echo -e "${YELLOW}Note: Workers management is temporarily disabled due to known issues${NC}"
