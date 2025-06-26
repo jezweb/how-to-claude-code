@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code specific
+.claude/claude.json
+claude-session-*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Documentation build
+docs/_build/
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Local development
+.local/
+.sandbox/
