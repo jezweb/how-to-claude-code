@@ -168,6 +168,12 @@ Playwright/Puppeteer MCP servers enable:
 - System monitoring
 - Workflow orchestration
 
+### Content & Search
+- AI-powered search with Jina
+- Content extraction from websites
+- Document processing
+- Knowledge aggregation
+
 ### Documentation
 - Generate from code
 - Create diagrams
